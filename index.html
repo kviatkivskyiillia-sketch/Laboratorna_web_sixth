@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" lang="uk" content="Квятківський Ілля Юрійович">
+    <meta name="Keywords" content="Web - Форми">
+    <title>Лабораторна робота №7</title>
+</head>
+<body>
+    <svg version="1.1" 
+       baseProfile="full"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       width="660px" 
+       height="430px" 
+       viewBox="0 0 660 430">
+
+    <desc>Варіант 7</desc>
+
+    <defs>
+      <symbol id="sq" viewBox="0 0 50 50" width="50" height="50">
+        <rect x="0" y="0" width="60" height="60" fill="blue" stroke="black" stroke-width="1"/>
+      </symbol>
+    </defs>
+
+    <g id="shapes" fill="blue" stroke="black" stroke-width="1">
+      <ellipse cx="380" cy="160" rx="120" ry="60"/>
+      <circle cx="320" cy="280" r="60"/>
+      <circle cx="440" cy="280" r="60"/>
+      <rect x="320" y="340" width="120" height="60"/>
+    </g>
+
+    <g id="squares">
+      <use xlink:href="#sq" x="200" y="100"/>
+      <use xlink:href="#sq" x="260" y="40"/>
+      <use xlink:href="#sq" x="440" y="40"/>
+      <use xlink:href="#sq" x="500" y="100"/>
+      <use xlink:href="#sq" x="200" y="280"/>
+      <use xlink:href="#sq" x="500" y="280"/>
+    </g>
+
+    <g id="axes" stroke="black" stroke-width="1.5" fill="black">
+      <line x1="40" y1="220" x2="610" y2="220"/>
+      <polygon points="615,220 599,214 599,226"/>
+      <line x1="200" y1="410" x2="200" y2="15"/>
+      <polygon points="200,8 194,24 206,24"/>
+    </g>
+
+    <g id="ticks" stroke="black" stroke-width="1">
+      <polyline points="260,200 260,240"/>
+      <polyline points="380,200 380,240"/>
+      <polyline points="500,200 500,240"/>
+      <polyline points="185,160 215,160"/>
+      <polyline points="185,100 215,100"/>
+      <polyline points="185,280 215,280"/>
+      <polyline points="185,340 215,340"/>
+    </g>
+
+    <g id="labels" font-size="22" fill="black">
+      <text x="222" y="30">Y</text>
+      <text x="625" y="245">X</text>
+      <text x="180" y="245" text-anchor="end">0</text>
+      <text x="262" y="245">1</text>
+      <text x="318" y="245">2</text>
+      <text x="382" y="245">3</text>
+      <text x="438" y="245">4</text>
+      <text x="502" y="245">5</text>
+      <text x="180" y="168" text-anchor="end">1</text>
+      <text x="180" y="108" text-anchor="end">2</text>
+      <text x="180" y="288" text-anchor="end">-1</text>
+      <text x="180" y="348" text-anchor="end">-2</text>
+    </g>
+    </svg>
+</body>
+</html>
